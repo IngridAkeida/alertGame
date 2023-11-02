@@ -17,12 +17,12 @@ function getButton(){
     }
   }
 
-  let number = prompt(`Hello ${player}! Now that we're introduced, let's play, I mean battle! Choose a number between 1 and 5.🐱`); 
+  let number = prompt(`Hello ${player}! Now that we're introduced, let's play, I mean battle! Choose a number between 1 and 3.🐱`); 
 
-  if(number < 0 || number > 6 || number == '' || null){
-    prompt(`Please set a valid value between 1 and 5.😾`);
+  if(number < 0 || number > 4 || number == '' || null){
+    prompt(`Please set a valid value between 1 and 3.😾`);
   } else{
-    robotCat = Math.floor(Math.random() * 5) + 1;
+    robotCat = Math.floor(Math.random() * 3) + 1;
     alert(`You chose ${number}🧝🏽, I chose ${robotCat}😼`)
 
     if(number != robotCat){
